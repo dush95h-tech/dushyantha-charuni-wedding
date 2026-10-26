@@ -7,7 +7,7 @@
   <meta property="og:title" content="Dushyantha & Charuni · 4 May 2027">
   <meta property="og:description" content="You are joyfully invited to celebrate our wedding at Pabavee Regency, Gampaha.">
   <title>Dushyantha & Charuni · Our Wedding</title>
-  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="motion.css"><script src="script.js?v=2" defer></script>
 </head>
 <body>
   <svg class="definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -16,8 +16,13 @@
     <g id="sprig" fill="#96a38c" stroke="#77896f" stroke-width="1"><path d="M0 0Q55-45 115-128" fill="none"/><path d="M22-20Q-9-56 4-68Q32-56 22-20M37-37Q70-32 83-53Q58-65 37-37M52-54Q23-79 34-104Q62-93 52-54M72-78Q108-65 125-88Q101-102 72-78M92-102Q77-133 95-150Q117-130 92-102"/></g>
     <g id="bouquet"><use href="#sprig" transform="translate(120 180) rotate(-80)"/><use href="#sprig" transform="translate(120 180) rotate(18)"/><use href="#sprig" transform="translate(100 175) rotate(-145) scale(.85)"/><use href="#sprig" transform="translate(150 185) rotate(70) scale(.8)"/><use href="#rose" transform="translate(106 158) scale(1.1)"/><use href="#rose" transform="translate(165 185) scale(.8)"/><use href="#rose" transform="translate(64 204) scale(.65)"/><g fill="#f9e4df" stroke="#c7a184"><circle cx="190" cy="128" r="6"/><circle cx="202" cy="117" r="5"/><circle cx="193" cy="108" r="4"/><circle cx="33" cy="160" r="5"/><circle cx="24" cy="146" r="4"/></g></g>
   </defs></svg>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+  <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" hidden>Pause animations</button>
   <div class="cover" id="cover">
+    <svg class="cover-bloom cover-bloom-left" viewBox="0 0 280 340" aria-hidden="true"><use href="#bouquet"/></svg>
+    <svg class="cover-bloom cover-bloom-right" viewBox="0 0 280 340" aria-hidden="true"><use href="#bouquet"/></svg>
     <p class="eyebrow cover-heading">A little envelope. A lifetime of love.</p>
+    <p class="cover-title">A beautiful beginning</p>
     <button class="envelope" id="open-invitation" aria-label="Open Dushyantha and Charuni’s wedding invitation">
       <span class="letter"><span>Dushyantha & Charuni</span><small>04 · 05 · 2027</small></span>
       <span class="envelope-pocket"></span><span class="envelope-flap"></span><span class="seal">D<span>&</span>C</span>
@@ -26,11 +31,12 @@
   </div>
   <main id="invitation" tabindex="-1" hidden>
     <section class="hero">
+      <div class="hero-arch" aria-hidden="true"></div>
       <svg class="flowers flowers-top" viewBox="0 0 280 340" aria-hidden="true"><use href="#bouquet"/></svg>
       <svg class="flowers flowers-bottom" viewBox="0 0 280 340" aria-hidden="true"><use href="#bouquet"/></svg>
       <div class="hero-inner">
         <p class="eyebrow">The wedding of</p>
-        <h1>Dushyantha<span class="ampersand">&</span>Charuni</h1>
+        <h1><span class="name name-groom">Dushyantha</span><span class="ampersand">&</span><span class="name name-bride">Charuni</span></h1>
         <div class="ornament" aria-hidden="true">❧</div>
         <p class="invitation-copy">Dushyantha & Charuni joyfully invite you<br class="desktop-break"> to celebrate their wedding</p>
         <div class="date"><span>Tuesday</span><strong>04</strong><span>May 2027</span></div>
