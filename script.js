@@ -3,6 +3,7 @@ const invitation = document.getElementById('invitation');
 const film = document.getElementById('film');
 const video = document.getElementById('intro-video');
 const pauseFilm = document.getElementById('pause-film');
+const filmStatus = document.getElementById('film-status');
 const motionToggle = document.getElementById('motion-toggle');
 const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
 let motionPaused = preference.matches;
@@ -49,6 +50,7 @@ async function playFilm() {
   cover.hidden = true;
   invitation.hidden = true;
   film.hidden = false;
+  filmStatus.hidden = false;
   document.body.classList.add('intro-active', 'film-playing');
   video.currentTime = 0;
   document.getElementById('film-progress').style.width = '0%';
@@ -69,6 +71,8 @@ pauseFilm.addEventListener('click', async () => {
 });
 video.addEventListener('pause', () => { pauseFilm.textContent = 'Play film'; });
 video.addEventListener('play', () => { pauseFilm.textContent = 'Pause film'; });
+video.addEventListener('playing', () => { filmStatus.hidden = true; });
+video.addEventListener('waiting', () => { filmStatus.hidden = false; });
 video.addEventListener('timeupdate', () => {
   if (Number.isFinite(video.duration) && video.duration > 0) document.getElementById('film-progress').style.width = (video.currentTime / video.duration * 100) + '%';
 });
