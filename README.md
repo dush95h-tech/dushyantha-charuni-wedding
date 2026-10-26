@@ -1,19 +1,15 @@
-# Dushyantha & Charuni — Wedding invitation
+# Dushyantha & Charuni — Kandyan wedding invitation
 
-A responsive floral wedding invitation with an animated envelope, Sri Lanka timezone countdown, and Google Maps directions. No RSVP, photos, or audio. Original SVG floral artwork is embedded in the page. Google Fonts are optional; local serif and sans-serif fallbacks are included.
+An ivory-and-gold invitation with emerald lettering, araliya florals, a 15-second silent illustrated opening film, countdown and venue directions. No RSVP or music.
 
-## Preview
+## Files
+- index.html: wedding details and page structure
+- kandyan.css: responsive Kandyan theme and motion
+- script.js: video controls, fallback, reduced motion, countdown
+- kandyan-intro.mp4: 720 × 1080 H.264 video, 15 seconds, no audio
+- kandyan-garden.png: original generated artwork of a fictional couple
+- ARTWORK.md: image-generation prompt and provenance
 
-Open `index.html` in a browser, or serve this folder with a static HTTP server.
+The opening film supports skip, pause, replay and download. Reduced-motion preferences skip the film. A playback error opens the invitation directly.
 
-## GitHub Pages
-
-In repository Settings → Pages, choose **Deploy from a branch**, then **main** and **/(root)**. Save. Share the resulting Pages URL with guests.
-
-## Edit
-
-- Wedding wording and venue link: `index.html`
-- Colours, flowers placement and layout: `style.css`
-- Countdown date and envelope animation: `script.js`
-
-Wedding: 4 May 2027, 9:00 AM–3:30 PM, Sri Lanka time. Poruwa ceremony: 10:30 AM. Venue: Pabavee Regency, Gampaha.
+Published through GitHub Pages from main, repository root. Wedding: 4 May 2027, 9:00 AM–3:30 PM Sri Lanka time. Poruwa ceremony: 10:30 AM. Pabavee Regency, Gampaha.
